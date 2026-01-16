@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la página</title>
-    <!-- Aquí puedes enlazar CSS o fuentes -->
-    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>CapiNexo</title>
 </head>
 <body>
 
     <!-- ENCABEZADO -->
     <header>
-        <h1>Nombre del sitio web</h1>
+        <div>
+            <h1>CapiNexo</h1>
+            <img src="capinexo.png" alt="mascota de la empresa" width="460" height="345">
+       </div>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
         <section>
-            <h2>Sección principal</h2>
-            <p>Este es el contenido principal de la página.</p>
+            <div style="text-align: center;"> 
+            <h1>¿Que hacemos?</h1>
+            <p>Nuestra institucion trata de ayudar a personas que tengan problemas de adicciones al igual que personas que estan en proceso</p>
+            </div>
         </section>
-
+             <!-- Proyectos -->
         <section>
-            <h2>Otra sección</h2>
-            <p>Contenido adicional.</p>
+            <div style="text-align: center;">
+            <h1>Proyectos </h1>
+
+            <h3>Reuniones </h3>
+            <p>En nuestras reuniones juntamos a un grupo de personas para hablar sus situaciones, muchas veces el no sentirse solos y estar acompañados ayuda a que sea mas facil este proceso</p>
+            <img src="anexo.jpg" alt="Reunines" width="460" height="345">
+
+            <h3>Talleres</h3>
+            <p>En nuestro centro de apoyo tambien habra talleres de diferentes cosas; "Baile", "Clases de guitarra", "clases de dibujo", aparte de estarte deintoxicando te enseñamos habilidades utiles que puedas usar en tu vida diaria</p>
+            <img src="baile.jpeg" alt="Baile"width="460" height="345">
+
+            <h3>Entrenamiento</h3>
+            <p>Tambien contamos con equipo de gimnasio para entrenar a unestros usuarios, contamos con coach certificados y nutriologos </p>
+            <img src="gym.jpeg" alt="gym" width="460" height="345">
+            </div>
         </section>
 
+                 <!-- Contacto -->
+        <section>
+            <h2> Contacto</h2>
+            <p>Deja tus datos y nos contactaremos contigo</p>
+            <form action="#" method="post">
+    
+
+                <!-- espacio de clor-->
+
+                <!-- Campo Nombre -->
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            
+                <!-- Campo Correo Electrónico -->
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <!-- Campo Mensaje -->
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+            
+                <!-- Botón Enviar -->
+                <button type="Enviar">Enviar</button>
+            
+              </form>
+        </section>
+            <div id= "seccion" class="seccioncolor">
+                <h1>Contamos con servicio de traslado</h1>
+                <button id="color" onclick="funcion()">Picale aqui</button>
+            </div>
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <p>&copy; pie de paguinaa xd</p>
+        
+        <p>&copy;</p> <a href="https://www.instagram.com/_capi2_?igsh=cHc1N2k0YTVmc3c5">Visita nuestro Instragram</a>
     </footer>
 
+    <script src="java.js "></script>
 </body>
 </html>

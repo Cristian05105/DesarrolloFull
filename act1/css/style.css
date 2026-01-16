@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(96, 96, 96);
+  }
+  
+  h1 {
+    color: rgb(110, 206, 72);
+    margin-left: 20px;
+  }
+
+  h2 {
+    color: rgb(8, 40, 244);
+    margin-left: 20px;
+  }
+
+  h3 {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+  }
+
+  .seccioncolor {
+    background-color: blue;
+    font-size: 30px;
+}
+
