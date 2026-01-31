@@ -1,0 +1,81 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #959292;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgb(210, 202, 202);
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+h1 { margin-bottom: 12px; }
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#nueva-tarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1c7c7;
+}
+
+#agregar-tarea {
+  padding: 10px 12px;
+  background: #222;
+  color: rgb(239, 232, 232);
+  cursor: pointer;
+}
+
+#agregar-tarea:hover { opacity: .9; }
+
+.error {
+  color: #c0392b;
+  min-height: 18px;
+  margin-bottom: 8px;
+}
+
+#lista-tareas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+.tarea.completa .texto {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.texto { flex: 1; word-break: break-word; }
+
+.btn {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-editar { background: #d5a537; }
+.btn-eliminar { background: #e74c3c; color: rgb(203, 200, 200); }
+
+@media (max-width: 520px) {
+  .controls { flex-direction: column; }
+  #agregar-tarea { width: 100%; }
+}
+ 
