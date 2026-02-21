@@ -1,0 +1,48 @@
+body { font-family: system-ui, Arial; margin: 0; background: #f6f7fb; 
+}
+
+
+.card { background: #fff; padding: 16px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.06); 
+}
+
+main.card { max-width: 420px; margin: 40px auto;
+ }
+
+label { display:block; margin-top: 10px; font-weight: 600; 
+}
+
+input { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ddd; border-radius: 10px; 
+}
+
+button { margin-top: 12px; width: 100%; padding: 10px; border: 0; border-radius: 10px; cursor: pointer; 
+}
+
+button.secondary { width: auto; padding: 8px 12px; background: #eee; 
+}
+
+.msg { margin-top: 10px; min-height: 20px; 
+}
+
+.msg.ok { color: #0a7a0a; 
+}
+
+.msg.err { color: #b00020; 
+}
+
+.hint { font-size: 12px; color: #666; margin-top: 14px; 
+}
+
+.topbar { display:flex; justify-content: space-between; align-items:center; padding: 16px; 
+}
+
+
+.grid { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px; 
+}
+
+
+.list { margin-top: 12px; padding-left: 18px; 
+}
+
+
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } 
+}

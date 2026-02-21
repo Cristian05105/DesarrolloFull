@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos</title>
+  <link rel="stylesheet" href="./capityle.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Productos</h1>
+    <div>
+      <button id="btnLogout" class="secondary">Logout</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Crear producto</h2>
+      <form id="productForm">
+        <label>Nombre</label>
+        <input id="name" required placeholder="gomitas 1K" />
+
+        <label>Precio</label>
+        <input id="price" type="number" required min="0" step="1" placeholder="110" />
+
+        <button type="submit">Crear</button>
+        <p id="msg" class="msg"></p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Lista</h2>
+      <button id="btnReload" class="secondary">Recargar</button>
+      <ul id="list" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="./productos.js"></script>
+</body>
+</html>

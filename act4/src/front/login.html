@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./capityle.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Iniciar sesión</h1>
+
+    <form id="login">
+      <label>Email</label>
+      <input id="email" type="email" required placeholder="test@tesst.com" />
+
+      <label>Password</label>
+      <input id="password" type="password" required placeholder="123456" />
+
+      <button type="submit">Entrar</button>
+      <p id="msg" class="msg"></p>
+    </form>
+
+    <p class="hint">
+      ¿No tienes usuario? Regístralo con Postman primero (o después hacemos el register aquí también).
+    </p>
+  </main>
+
+  <script src="./login.js"></script>
+</body>
+</html>
+
+ 
